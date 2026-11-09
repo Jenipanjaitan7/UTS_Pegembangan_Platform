@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title description">
+  <title id="title">Use Case Diagram Sistem Ruang Laundry</title>
+  <desc id="description">Diagram interaksi Petugas dengan fitur web Ruang Laundry.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #18332e; }
+      .boundary { fill: #fff; stroke: #426b62; stroke-width: 2.5; }
+      .oval { fill: #edf6f2; stroke: #426b62; stroke-width: 2; }
+      .assoc { fill: none; stroke: #526e67; stroke-width: 2; }
+      .include { fill: none; stroke: #526e67; stroke-width: 2; stroke-dasharray: 8 6; }
+      .hint { fill: #5b706a; font-size: 15px; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#526e67"/>
+    </marker>
+  </defs>
+
+  <rect x="300" y="40" width="940" height="680" rx="18" class="boundary"/>
+  <text x="770" y="82" text-anchor="middle" font-size="26" font-weight="700">Sistem Ruang Laundry (Web)</text>
+
+  <g class="assoc">
+    <path d="M155 367 L405 180"/>
+    <path d="M155 382 L405 285"/>
+    <path d="M155 397 L405 390"/>
+    <path d="M155 412 L405 495"/>
+    <path d="M155 427 L405 600"/>
+    <path d="M155 382 L815 285"/>
+  </g>
+  <path d="M745 495 L815 495" class="include" marker-end="url(#arrow)"/>
+  <text x="780" y="478" text-anchor="middle" class="hint">&lt;&lt;include&gt;&gt;</text>
+
+  <g fill="none" stroke="#18332e" stroke-width="4" stroke-linecap="round">
+    <circle cx="130" cy="315" r="22"/>
+    <path d="M130 337 L130 425 M92 365 L168 365 M130 425 L98 474 M130 425 L162 474"/>
+  </g>
+  <text x="130" y="510" text-anchor="middle" font-size="21" font-weight="600">Petugas</text>
+
+  <g>
+    <ellipse cx="575" cy="180" rx="170" ry="48" class="oval"/>
+    <text x="575" y="174" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="575">Melihat ringkasan</tspan><tspan x="575" dy="23">operasional</tspan>
+    </text>
+
+    <ellipse cx="575" cy="285" rx="170" ry="48" class="oval"/>
+    <text x="575" y="279" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="575">Mengelola pelanggan</tspan><tspan x="575" dy="23" font-size="15">(tambah, lihat, ubah, hapus)</tspan>
+    </text>
+
+    <ellipse cx="575" cy="390" rx="170" ry="48" class="oval"/>
+    <text x="575" y="384" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="575">Mengelola layanan</tspan><tspan x="575" dy="23" font-size="15">(tambah, lihat, ubah, hapus)</tspan>
+    </text>
+
+    <ellipse cx="575" cy="495" rx="170" ry="48" class="oval"/>
+    <text x="575" y="489" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="575">Mengelola pesanan</tspan><tspan x="575" dy="23" font-size="15">(buat, lihat, ubah status, hapus)</tspan>
+    </text>
+
+    <ellipse cx="575" cy="600" rx="170" ry="48" class="oval"/>
+    <text x="575" y="594" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="575">Mencari data</tspan><tspan x="575" dy="23" font-size="15">(pelanggan, layanan, pesanan)</tspan>
+    </text>
+
+    <ellipse cx="985" cy="285" rx="170" ry="48" class="oval"/>
+    <text x="985" y="279" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="985">Memfilter pesanan</tspan><tspan x="985" dy="23" font-size="15">berdasarkan status</tspan>
+    </text>
+
+    <ellipse cx="985" cy="495" rx="170" ry="48" class="oval"/>
+    <text x="985" y="489" text-anchor="middle" font-size="18" font-weight="600">
+      <tspan x="985">Menghitung total harga</tspan><tspan x="985" dy="23" font-size="15">berdasarkan layanan dan jumlah</tspan>
+    </text>
+  </g>
+
+  <text x="770" y="682" text-anchor="middle" class="hint">Seluruh fitur diakses oleh Petugas melalui antarmuka web.</text>
+</svg>
